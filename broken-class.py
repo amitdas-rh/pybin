@@ -31,7 +31,8 @@ class Human():
 	def __init__(self, fname, lname):
 		self.fname = fname
 		self.lname = lname
-'''
+
+
 class Freshman(Human):
 	def __init__(self, fname, lname, year):
 		super(Freshman, self).__init__(fname, lname, year)    # super format mistake
@@ -42,4 +43,4 @@ class Freshman(Human):
 
 
 x = Freshman("Rav", "Holo", "2020")
-x.examl()'''		
+x.examl()		
