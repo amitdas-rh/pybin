@@ -1,5 +1,6 @@
 #
 # Date Aug 2020
+# Try exception sample
 #
 
 # v = 500
