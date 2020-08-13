@@ -9,8 +9,8 @@ import os
 
 def filenm():
 	global tmpv
-	# tmpv = input("Enter FileName: ")     # py format in 3.6 
-	tmpv =  raw_input("Enter FileName: ")  # PY FORMAT IN 2.7 
+	# tmpv = input("Enter FileName: ")     # py format in v3.6 
+	tmpv =  raw_input("Enter FileName: ")  # py format in v2.7 
 		
 # reading txt file
 
@@ -20,10 +20,8 @@ def rdin():
 		f.write("Intitial line:" + str(ix) + "\n")
 	f.close()
 
-
 #f1 = open("tmpv.txt","r")
 #f2 = open("tmpv.txt","r")
-
 #print(f2.read(10))
 #print(f3.readline())
 
@@ -49,7 +47,7 @@ def apndin():
 # deleting file
 
 def delin():
-	del_tmpv = raw_input("Re-enter filename to delete: ")
+	del_tmpv = raw_input("Re-enter filename to delete: ")   # py raw_input() format in v2.7
 	if os.path.exists(del_tmpv):
 		if del_tmpv == tmpv:
 			os.remove(del_tmpv)
@@ -63,7 +61,13 @@ filenm()
 rdin()
 apndin()
 ltin()
-delin()
+
+# deleting request by user:wq
+
+if raw_input("Press 'y' to delete the file :") == 'y':
+	delin()
+else:
+	pass
 
 #f2.close()
 #f3.close()
