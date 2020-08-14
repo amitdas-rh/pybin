@@ -17,7 +17,7 @@ except:
 else:
  print("No error seen")
 finally:
- print("Blocked is finished")
+ print("Blocked is finished.")
 
 # open file with write mode on
 
@@ -42,7 +42,7 @@ try:
  num2 = int(input("Enter another Denominator: "))
  val = num1/num2
 except ZeroDivisionError:
- print("Error ZeroDivisionError block")
+ print("Error in ZeroDivisionError block")
  print(">>Denominator 0 is not acceptable")
 else:
  print ("Inside else block")
