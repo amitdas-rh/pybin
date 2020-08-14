@@ -63,8 +63,8 @@ apndin()
 ltin()
 
 # deleting request by user:wq
-
-if raw_input("Press 'y' to delete the file :") == 'y':
+uinput = raw_input("Press y/Y to delete the file :")
+if uinput == 'y' or uinput == 'Y':
 	delin()
 else:
 	pass
