@@ -14,15 +14,12 @@ arr1d = np.array([99, 199, 299, 399, 499, 599])
 arr2d = np.array([[99, 199, 299], [100, 200, 300]])
 arr3d = np.array([[[1000, 2000, 3000], [999, 2999, 3999]], [[001, 002, 003], [599, 688, 777]]])
 
-# Runtime 1D list creation
-# Then convert list to array
-
 # Create empty list
 lx = []
 
 # User input for list
 def usrentr():
-    usrv = int(raw_input("Enter list size : "))
+    usrv = int(raw_input("Enter list size : "))  # format for v2.7 python
     for x in range(0, usrv):
         val = int(raw_input("~> "))
         lx.append(val)
@@ -31,13 +28,8 @@ def usrentr():
 
 # converting list to array
 def aryconv():
-    """
-
-    :rtype: object
-    """
     ary = np.array(lx)
-    print("\nConverted to array")
-    print newary
+    print("\nConverted to array " + str(ary))
     return ary
 
 # Checking odd even
@@ -45,7 +37,7 @@ def odevn(ary):
     odc = 0  # type: int
     evnc = 0
     for nbr in ary:
-        if (nbr % 2) == 0: # check even
+        if (nbr % 2) == 0:   # check even
             print("~> {0} is even".format(nbr))
             evnc += 1
         else:
@@ -61,5 +53,4 @@ newary = aryconv()
 
 # Check odd even in array
 odevn(newary)
-
 #EOF
