@@ -23,6 +23,10 @@ print('\n')
 for c, v in enumerate(vlist, 100):
 	if (c % 2 == 0):
 		print (c, v, " ~> even")
+		if (v == "megenta"):
+			print(c, v, " ~> even ~> checked")
+		else:
+			print(c, v, " ~> even")
 	else:
 		print (c, v, " ~> odd") 
 
